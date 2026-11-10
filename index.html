@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Bassotreeni" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#15140f" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+  <title>Bassotreeni 30</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand">🎸 Bassotreeni 30</a>
+    <div class="tuner" aria-label="Viritysäänet">
+      <span class="tuner-label">Viritys:</span>
+      <button data-note="E" title="E1 (41,2 Hz)">E</button>
+      <button data-note="A" title="A1 (55 Hz)">A</button>
+      <button data-note="D" title="D2 (73,4 Hz)">D</button>
+      <button data-note="G" title="G2 (98 Hz)">G</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div class="metronome" id="metronome">
+    <button id="metro-toggle" class="metro-btn" aria-label="Käynnistä metronomi">▶</button>
+    <button id="metro-down" class="small" aria-label="Hitaammin">−</button>
+    <span><strong id="metro-bpm">70</strong> bpm</span>
+    <button id="metro-up" class="small" aria-label="Nopeammin">+</button>
+    <span class="beats" id="metro-beats"><i></i><i></i><i></i><i></i></span>
+  </div>
+
+  <script src="program.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
